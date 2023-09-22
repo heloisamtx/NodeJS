@@ -4,15 +4,15 @@ var transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     user: 'lolomachadoteixeira@gmail.com',
-    pass: 'yourpamvpo ijix xqbc skib sword'
+    pass: 'hqfx hrga bmge aonu'
   }
 });
 
 var mailOptions = {
   from: 'lolomachadoteixeira@gmail.com',
   to: 'joedio.borges@ifc.edu.br',
-  subject: 'Sending Email using Node.js',
-  text: 'Heloisa Machado 2B'
+  subject: 'AAAA Email using Node.js',
+  text: 'Bom dia! Heloisa Machado - 2B senha:hqfx hrga bmge aonu'
 };
 
 transporter.sendMail(mailOptions, function(error, info){
@@ -21,4 +21,4 @@ transporter.sendMail(mailOptions, function(error, info){
   } else {
     console.log('Email sent: ' + info.response);
   }
-}); 
+});
